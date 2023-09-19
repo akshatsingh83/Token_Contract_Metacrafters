@@ -18,11 +18,13 @@ tokenName: A string representing the name of the token, such as "Metacrafters." 
 
 A fundamental aspect of the contract is the mapping called "balances." This mapping associates Ethereum addresses with their corresponding token balances. Each address is linked to a balance that represents the number of tokens owned by that address.
 
-Minting Function: The contract includes a function named "mint," which enables the creation and distribution of new tokens. This function takes two arguments:
+**Minting Function:**
+The contract includes a function named "mint," which enables the creation and distribution of new tokens. This function takes two arguments:
 
 _to: The Ethereum address to which the newly minted tokens will be sent. _value: The quantity of tokens to be minted and sent to the specified address. This action results in an increase in both the overall token supply and the balance of the recipient address.
 
-Burning Function: The contract also features a function labeled "burn," which facilitates the removal of existing tokens from circulation. This function takes one argument:
+**Burning Function:** 
+The contract also features a function labeled "burn," which facilitates the removal of existing tokens from circulation. This function takes one argument:
 
 _value: The amount of tokens to be burned. Prior to performing the burn operation, the function verifies whether the sender's balance is sufficient for the burning process. If the balance is adequate, the function reduces both the total token supply and the sender's token balance by the specified amount.
 
